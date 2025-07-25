@@ -29,9 +29,7 @@ nav a{
   
 }
 
-.button{
-    color: #8e3907;
-}
+
 .banner{
     display: flex;
     justify-content: space-between;
@@ -46,6 +44,15 @@ nav a{
     font-size: 10px;
     font-weight: normal;
 
+}
+section ul li{
+    font-size: 20px;
+    margin-right: 50px;
+    
+}
+section a{
+    text-decoration: none;
+    color: #000000;
 }
 .plants{
     max-width: 1150px;
@@ -102,12 +109,13 @@ Join{
     background-image: url('../assets/deal-bloom.png');
     background-repeat: no-repeat;
     text-align: center;
-    
+    border-radius: 5px;
 }
 .join-pic{
     grid-area: join-pic;
     background-image: url('../assets/deal-ana.png');
     background-repeat: no-repeat;
+    border-radius: 5px;
      text-align: center;
      
 }
@@ -116,6 +124,7 @@ Join{
     background-image: url('../assets/deal-zabo.png'); 
     background-repeat: no-repeat;
     text-align: center;
+    border-radius: 5px;
 }
 .join-his{
     display: grid;
@@ -129,24 +138,59 @@ Join{
 }
 
 flower-input{
-    max-width: 1150px;
     
-    margin-top: 100px;
-    margin-bottom: 100px;
+    max-width: 1150px;
+   gap: 100px;
+   margin: 0 auto;
+   margin-top: 100px;
+   margin-bottom: 100px;
     text-align: center;
+    background-image: url('../assets/news-letter-bg.png');
+     
+
+}
+.brf{
     background-image: url('../assets/news-letter-bg.png');
 }
 
+input[ type ="text"]{
+    background-color: #d1cfdf;
+    height: 100px;
+    padding: 0 40px;
+
+}
+.btn-clo{
+    background-color: #E95A08;
+    color: white;
+    padding: 15px 35px;
+    border-color: none;
+}
+.nnn{
+    background-color: white;
+    width: 200px;
+    height: 45px;
+
+
+}
+.cld{
+    color: white;
+}
 .footer{
-    display: flex;
-    gap: 10px;
-    margin-top: 100px;
+    display:flex;
+    max-width: 1150px;
+   gap: 100px;
+   margin: 0 auto;
+   margin-top: 100px;
+   margin-bottom: 100px;
+    justify-content: space-between;
+    background-color: #d1cfdf
 }
 .footer-contriner{
     display: flex;
     gap: 20px;
     text-align: center;
 }
+
 
 @media screen and ( max-width: 576px){
     .plants-container{
@@ -169,5 +213,11 @@ flower-input{
         "aside"
         ;
     }
+    .footer{
+        flex-direction: column;
+    }
+     .footer-contriner{
+        flex-direction: column;
+     }
 
 }
