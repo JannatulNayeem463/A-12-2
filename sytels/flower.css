@@ -45,12 +45,12 @@ nav a{
     font-weight: normal;
 
 }
-section ul li{
+section2 ul li{
     font-size: 20px;
     margin-right: 50px;
     
 }
-section a{
+section2 a{
     text-decoration: none;
     color: #000000;
 }
@@ -194,7 +194,8 @@ input[ type ="text"]{
 
 @media screen and ( max-width: 576px){
     .plants-container{
-        grid-template-columns: repeat(1, 1fr);
+        grid-template-columns: repeat(2, 1fr);
+        
     }
     .flower img{
             width: 50%; 
@@ -219,5 +220,9 @@ input[ type ="text"]{
      .footer-contriner{
         flex-direction: column;
      }
+    nav ul li{
+        display: none;
+    }
+     
 
 }
