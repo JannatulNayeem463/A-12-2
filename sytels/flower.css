@@ -1,0 +1,153 @@
+
+
+nav{
+    display: flex;
+    justify-content: space-between;
+    
+}
+nav ul{
+    display: flex;
+}
+nav ul li{
+    list-style: none;
+    font-size: 20px;
+    margin-right: 50px;
+    
+}
+nav a{
+    text-decoration: none;
+    color: #8987A1;
+    
+
+}
+.text-primary{
+    color: #E95A08;
+    
+}
+.color{
+    color: #000000;
+  
+}
+
+.button{
+    color: #8e3907;
+}
+.banner{
+    display: flex;
+    justify-content: space-between;
+    margin: 50px 40px 10px 130px;
+    align-items: center;
+}
+.banner-description{
+    font-size: 10px;
+    font-weight: normal;
+}
+.plants-description{
+    font-size: 10px;
+    font-weight: normal;
+
+}
+.plants{
+    max-width: 1150px;
+    margin: 0 auto;
+
+}
+.flower img{
+    width: 100%;
+}
+.plants-container{
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
+.flower{
+    border: 1px solid silver;
+    
+}
+.flower img{
+    width: 100%;
+}
+.Section{
+    display:flex;
+     max-width: 1150px;
+    gap: 100px;
+    margin: 0 auto;
+    margin-top: 100px;
+    margin-bottom: 100px;
+    
+}
+.Sections-title{
+    font-size: 50px;
+    font-weight: bold;
+    
+}
+.Sections-contriner{
+    text-align: center;
+
+}
+naima{
+    margin-top: 200%;
+}
+Join{
+   max-width: 1150px;
+   margin: 0 auto;
+   text-align: center;
+}
+.text{
+    text-decoration: #ffff;
+}
+
+.join-contriner{
+    grid-area:join-contriner ;
+    background-image: url('../assets/deal-bloom.png');
+    background-repeat: no-repeat;
+    text-align: center;
+    
+}
+.join-pic{
+    grid-area: join-pic;
+    background-image: url('../assets/deal-ana.png');
+    background-repeat: no-repeat;
+     text-align: center;
+     
+}
+.aside{
+    grid-area: aside;
+    background-image: url('../assets/deal-zabo.png'); 
+    background-repeat: no-repeat;
+    text-align: center;
+}
+.join-his{
+    display: grid;
+    grid-template-areas: 
+    " join-contriner  aside "
+    " join-pic   aside "
+    ;
+    max-width: 1150px;
+    margin: 0 auto;
+    gap: 20px;
+}
+
+@media screen and ( max-width: 576px){
+    .plants-container{
+        grid-template-columns: repeat(1, 1fr);
+    }
+    .flower img{
+            width: 50%; 
+        }
+    .banner{
+        flex-direction: column-reverse;
+    }
+
+    .Section{
+        flex-direction:column ;
+    }
+    .join-his{
+        grid-template-areas: 
+        "join-contriner"
+        "join-pic"
+        "aside"
+        ;
+    }
+
+}
